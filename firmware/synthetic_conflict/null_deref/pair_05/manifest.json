@@ -1,0 +1,14 @@
+{
+  "theme": "null_deref",
+  "pair_id": "pair_05",
+  "cwe": "CWE-125",
+  "conflict_pair": ["a", "b"],
+  "expected_outcome": "UNSAT_BY_CONFLICT",
+  "nodes": [
+    {"id": "a", "file": "vuln.smt2",         "skeleton": "BVULE VAR CONST"},
+    {"id": "m", "file": "intermediate.smt2", "skeleton": "EQ VAR EXPR"},
+    {"id": "b", "file": "patch.smt2",        "skeleton": "BVUGE VAR CONST"},
+    {"id": "d", "file": "distractor.smt2",   "skeleton": "EQ VAR CONST"}
+  ],
+  "dep_edges": [["a", "m"], ["m", "b"], ["a", "d"]]
+}

@@ -1,0 +1,11 @@
+{
+  "cve_id": "CVE-2022-34835",
+  "vuln_version": "v2022.04",
+  "patched_version": "v2022.07",
+  "vuln_node_count": 1647,
+  "patched_node_count": 1788,
+  "sample_size": 200,
+  "reuse_pct_symbolic_alpha_1.0": 0.625,
+  "reuse_pct_blend_alpha_0.5": 1.0,
+  "reuse_pct_neural_alpha_0.0": 1.0
+}

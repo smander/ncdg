@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun a () (_ BitVec 16))
+(declare-fun b () (_ BitVec 16))
+(assert (bvult (bvadd a b) #x0100))
+(check-sat)
+(exit)

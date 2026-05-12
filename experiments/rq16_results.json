@@ -1,0 +1,86 @@
+{
+  "audits": [
+    {
+      "target": "uboot",
+      "version": "v2022.04",
+      "cve_id": "CVE-2022-30790",
+      "node_count": 3979,
+      "sample_size": 100,
+      "unsat_predicted_count": 0,
+      "disagreements": 0,
+      "soundness_rate": 1.0
+    },
+    {
+      "target": "uboot",
+      "version": "v2022.04",
+      "cve_id": "CVE-2022-30552",
+      "node_count": 3820,
+      "sample_size": 100,
+      "unsat_predicted_count": 0,
+      "disagreements": 0,
+      "soundness_rate": 1.0
+    },
+    {
+      "target": "uboot",
+      "version": "v2022.04",
+      "cve_id": "CVE-2022-34835",
+      "node_count": 1647,
+      "sample_size": 100,
+      "unsat_predicted_count": 0,
+      "disagreements": 0,
+      "soundness_rate": 1.0
+    },
+    {
+      "target": "uboot",
+      "version": "v2022.07",
+      "cve_id": "CVE-2022-30790",
+      "node_count": 3979,
+      "sample_size": 100,
+      "unsat_predicted_count": 0,
+      "disagreements": 0,
+      "soundness_rate": 1.0
+    },
+    {
+      "target": "uboot",
+      "version": "v2022.07",
+      "cve_id": "CVE-2022-30552",
+      "node_count": 3820,
+      "sample_size": 100,
+      "unsat_predicted_count": 0,
+      "disagreements": 0,
+      "soundness_rate": 1.0
+    },
+    {
+      "target": "uboot",
+      "version": "v2022.07",
+      "cve_id": "CVE-2022-34835",
+      "node_count": 1647,
+      "sample_size": 100,
+      "unsat_predicted_count": 0,
+      "disagreements": 0,
+      "soundness_rate": 1.0
+    },
+    {
+      "target": "tfa",
+      "version": "v2.8",
+      "cve_id": "CVE-2022-47630",
+      "node_count": 2,
+      "sample_size": 2,
+      "unsat_predicted_count": 0,
+      "disagreements": 0,
+      "soundness_rate": 1.0
+    },
+    {
+      "target": "tfa",
+      "version": "v2.9",
+      "cve_id": "CVE-2022-47630",
+      "node_count": 2,
+      "sample_size": 2,
+      "unsat_predicted_count": 0,
+      "disagreements": 0,
+      "soundness_rate": 1.0
+    }
+  ],
+  "total_disagreements": 0,
+  "verdict": "PASS"
+}

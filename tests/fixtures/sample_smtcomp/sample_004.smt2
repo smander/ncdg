@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun len () (_ BitVec 16))
+(declare-fun off () (_ BitVec 16))
+(assert (bvuge len #x0014))
+(assert (bvult off len))
+(check-sat)
+(exit)

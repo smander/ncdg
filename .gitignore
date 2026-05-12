@@ -1,0 +1,97 @@
+# =============================================================================
+# .gitignore — Constraint Dependency Graph repository
+# Intent: ship code, tests, experiment runners, canonical result JSONs.
+#         Exclude AI plans, paper sources, large binaries, build byproducts.
+# =============================================================================
+
+# --- AI plans, specs, agent state ------------------------------------------
+docs/superpowers/
+
+# --- REMINDER: do NOT commit AI assistant artefacts -----------------------
+# The following are intentionally NOT in this .gitignore because the user
+# wants control over them per-commit. Check `git status` before pushing and
+# make sure none of these slipped in:
+#   .claude/                      Claude Code session state, settings, snapshots
+#   .cursor/, .continue/          other AI IDE state directories
+#   CLAUDE.md, AGENTS.md, GEMINI.md   AI agent instruction files
+#   .github/copilot-instructions.md   Copilot instructions
+# Also strip "Co-Authored-By: Claude ..." trailers from commit messages
+# before pushing if you don't want them in public history.
+
+# --- Documentation / paper artefacts (not code) ----------------------------
+docs/
+paper/
+ns_cdg_draft/
+*.docx
+*.pdf
+
+# --- LaTeX / build byproducts ----------------------------------------------
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+texput.log
+build.log
+missfont.log
+
+# --- Python caches, virtualenvs, eggs --------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Large data not needed for reproduction (re-buildable) -----------------
+firmware/binaries/
+firmware_builds/
+data/
+
+# --- Trained-model artefacts (large; regenerate with scripts/train_*.py) ---
+models/embedder/
+models/embedder.faiss
+models/embedder.meta.jsonl
+models/predictor.pt
+
+# --- Compiled C benchmarks (rebuilt by Dockerfile) -------------------------
+cdg_bench_v10
+cdg_bench_v11
+cdg_bench_v12
+cdg_bench_v13
+*.o
+
+# --- Local LaTeX/results scratch -------------------------------------------
+out/
+results/
+paper.zip
+algorithms.zip
+*.zip
+
+# --- Verification-run snapshots (not canonical) ----------------------------
+verification_run/
+experiments/verification_run/
+experiments/baseline/
+
+# --- AI-authored reports ---------------------------------------------------
+experiments/verification.md
+
+# --- Anomalous artefacts from prior shell sessions -------------------------
+{src,versions,tests,cdg_lib}
+
+# --- IDE / OS --------------------------------------------------------------
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- Local environment files -----------------------------------------------
+.env
+.env.local

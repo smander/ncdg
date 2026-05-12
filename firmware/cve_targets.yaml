@@ -1,0 +1,41 @@
+# Per-CVE metadata for real angr extraction.
+# patch_commit values come from upstream U-Boot and TF-A git history.
+# vulnerable_bb_hint is the basic-block name or function-relative offset
+# that the BoundedExplorer should target.
+
+cves:
+  - cve_id: CVE-2022-30790
+    cwe: CWE-787
+    target: uboot
+    function: net_process_received_packet
+    file_line: net/net.c:900
+    patch_commit: "f31a535101a6c1ce4b7d92cc02c12cdb3eddca97"
+    vulnerable_bb_hint: "hole_descriptor_overwrite"
+    harness_module: firmware.harnesses.cve_2022_30790
+
+  - cve_id: CVE-2022-30552
+    cwe: CWE-787
+    target: uboot
+    function: net_process_received_packet
+    file_line: net/net.c:900
+    patch_commit: "8c0470e63bdcad711cf16955aa074cda69be7a2c"
+    vulnerable_bb_hint: "memcpy_overflow"
+    harness_module: firmware.harnesses.cve_2022_30552
+
+  - cve_id: CVE-2022-34835
+    cwe: CWE-787
+    target: uboot
+    function: do_i2c_md
+    file_line: cmd/i2c.c:303
+    patch_commit: "54ee2dc05b8917e89eea53db28db3041e4adc6c1"
+    vulnerable_bb_hint: "stack_buffer_overflow"
+    harness_module: firmware.harnesses.cve_2022_34835
+
+  - cve_id: CVE-2022-47630
+    cwe: CWE-125
+    target: tfa
+    function: get_ext
+    file_line: drivers/auth/mbedtls/mbedtls_x509_parser.c:147
+    patch_commit: "5b916b65c2e6f8a17b9f37ee87d7e24ee14bdda5"
+    vulnerable_bb_hint: "extension_oob_read"
+    harness_module: firmware.harnesses.cve_2022_47630

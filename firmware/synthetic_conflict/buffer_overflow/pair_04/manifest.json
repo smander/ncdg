@@ -1,0 +1,14 @@
+{
+  "theme": "buffer_overflow",
+  "pair_id": "pair_04",
+  "cwe": "CWE-787",
+  "conflict_pair": ["a", "b"],
+  "expected_outcome": "UNSAT_BY_CONFLICT",
+  "nodes": [
+    {"id": "a", "file": "vuln.smt2",         "skeleton": "BVULE VAR CONST"},
+    {"id": "m", "file": "intermediate.smt2", "skeleton": "EQ VAR EXPR"},
+    {"id": "b", "file": "patch.smt2",        "skeleton": "BVUGT VAR CONST"},
+    {"id": "d", "file": "distractor.smt2",   "skeleton": "EQ VAR CONST"}
+  ],
+  "dep_edges": [["a", "m"], ["m", "b"], ["a", "d"]]
+}

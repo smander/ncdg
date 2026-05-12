@@ -1,0 +1,16 @@
+{
+  "theme": "integer_overflow",
+  "pair_id": "pair_03",
+  "cwe": "CWE-190",
+  "conflict_pair": [],
+  "expected_outcome": "SAT",
+  "b_should_misfire": true,
+  "a_unsat_only": true,
+  "nodes": [
+    {"id": "a", "file": "vuln.smt2",         "skeleton": "EQ CONST CONST"},
+    {"id": "m", "file": "intermediate.smt2", "skeleton": "EQ VAR EXPR"},
+    {"id": "b", "file": "patch.smt2",        "skeleton": "BVSGT VAR CONST"},
+    {"id": "d", "file": "distractor.smt2",   "skeleton": "EQ VAR CONST"}
+  ],
+  "dep_edges": [["a", "m"], ["m", "b"], ["a", "d"]]
+}

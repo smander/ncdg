@@ -1,0 +1,10 @@
+z3-solver>=4.12.0
+networkx>=3.0
+pytest>=7.0
+angr>=9.2,<10
+claripy>=9.2,<10
+pyyaml>=6.0,<7
+sentence-transformers>=2.7,<3
+faiss-cpu>=1.8,<2
+anthropic>=0.34,<1
+torch-geometric>=2.5,<3

@@ -1,0 +1,11 @@
+.venv/
+.idea/
+.git/
+.claude/
+__pycache__/
+*.pyc
+results/
+docs/
+CDG_Paper_Plans_Synthetic.docx
+cdg_bench_v10
+*.egg-info/

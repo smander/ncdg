@@ -1,0 +1,12 @@
+services:
+  cdg-bench:
+    build: .
+    volumes:
+      - ./results:/app/results
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  paper:
+    build: ./paper
+    volumes:
+      - ./paper:/output

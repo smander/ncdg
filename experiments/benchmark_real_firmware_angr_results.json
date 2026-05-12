@@ -1,0 +1,274 @@
+{
+  "uboot": {
+    "construction": {
+      "v2022.04": {
+        "node_count": 8,
+        "edge_counts": {
+          "dep": 5,
+          "con": 0,
+          "sim": 56,
+          "prov": 0
+        },
+        "cve_triggers": 3
+      },
+      "v2022.07": {
+        "node_count": 8,
+        "edge_counts": {
+          "dep": 5,
+          "con": 0,
+          "sim": 26,
+          "prov": 0
+        },
+        "cve_triggers": 3
+      }
+    },
+    "solving": {
+      "z3": {
+        "sat": 13,
+        "unsat": 3,
+        "per_version": {
+          "v2022.04": {
+            "c_0001": "SAT",
+            "c_0002": "SAT",
+            "c_0003": "SAT",
+            "c_0004": "SAT",
+            "c_0005": "SAT",
+            "c_0006": "SAT",
+            "c_0007": "SAT",
+            "c_0008": "SAT"
+          },
+          "v2022.07": {
+            "c_0001": "SAT",
+            "c_0002": "SAT",
+            "c_0003": "UNSAT",
+            "c_0004": "SAT",
+            "c_0005": "UNSAT",
+            "c_0006": "SAT",
+            "c_0007": "SAT",
+            "c_0008": "UNSAT"
+          }
+        }
+      },
+      "smtlib": {
+        "sat": 13,
+        "unsat": 3,
+        "per_version": {
+          "v2022.04": {
+            "c_0001": "SAT",
+            "c_0002": "SAT",
+            "c_0003": "SAT",
+            "c_0004": "SAT",
+            "c_0005": "SAT",
+            "c_0006": "SAT",
+            "c_0007": "SAT",
+            "c_0008": "SAT"
+          },
+          "v2022.07": {
+            "c_0001": "SAT",
+            "c_0002": "SAT",
+            "c_0003": "UNSAT",
+            "c_0004": "SAT",
+            "c_0005": "UNSAT",
+            "c_0006": "SAT",
+            "c_0007": "SAT",
+            "c_0008": "UNSAT"
+          }
+        }
+      }
+    },
+    "accuracy": {
+      "v2022.04": {
+        "correct": 8,
+        "total": 8,
+        "accuracy": 1.0
+      },
+      "v2022.07": {
+        "correct": 8,
+        "total": 8,
+        "accuracy": 1.0
+      }
+    },
+    "cross_version": {
+      "v2022.04_to_v2022.07": {
+        "added": 0,
+        "removed": 0,
+        "modified": 3,
+        "unchanged": 5,
+        "reuse_pct": 62.5
+      }
+    },
+    "propagation": {
+      "v2022.04": {
+        "CVE-2022-30790": [
+          "c_0002",
+          "c_0001",
+          "c_0004",
+          "c_0005",
+          "c_0006",
+          "c_0007",
+          "c_0008"
+        ],
+        "CVE-2022-30552": [
+          "c_0004",
+          "c_0002",
+          "c_0001",
+          "c_0003",
+          "c_0006",
+          "c_0007",
+          "c_0008"
+        ],
+        "CVE-2022-34835": [
+          "c_0006",
+          "c_0007",
+          "c_0004",
+          "c_0002",
+          "c_0001",
+          "c_0005",
+          "c_0003"
+        ]
+      },
+      "v2022.07": {
+        "CVE-2022-30790": [
+          "c_0005",
+          "c_0008"
+        ],
+        "CVE-2022-30552": [
+          "c_0003",
+          "c_0008"
+        ],
+        "CVE-2022-34835": [
+          "c_0005",
+          "c_0003"
+        ]
+      }
+    },
+    "shortcuts": {
+      "v2022.04": {
+        "cache_hits": 1,
+        "subsumption_hits": 6,
+        "full_solves": 1
+      },
+      "v2022.07": {
+        "cache_hits": 1,
+        "subsumption_hits": 3,
+        "full_solves": 4
+      }
+    },
+    "parity": {
+      "mismatches_total": 0,
+      "backends_compared": [
+        "z3",
+        "smtlib"
+      ]
+    }
+  },
+  "tfa": {
+    "construction": {
+      "v2.8": {
+        "node_count": 3,
+        "edge_counts": {
+          "dep": 2,
+          "con": 0,
+          "sim": 6,
+          "prov": 0
+        },
+        "cve_triggers": 1
+      },
+      "v2.9": {
+        "node_count": 3,
+        "edge_counts": {
+          "dep": 2,
+          "con": 0,
+          "sim": 2,
+          "prov": 0
+        },
+        "cve_triggers": 1
+      }
+    },
+    "solving": {
+      "z3": {
+        "sat": 5,
+        "unsat": 1,
+        "per_version": {
+          "v2.8": {
+            "c_0001": "SAT",
+            "c_0002": "SAT",
+            "c_0003": "SAT"
+          },
+          "v2.9": {
+            "c_0001": "SAT",
+            "c_0002": "SAT",
+            "c_0003": "UNSAT"
+          }
+        }
+      },
+      "smtlib": {
+        "sat": 5,
+        "unsat": 1,
+        "per_version": {
+          "v2.8": {
+            "c_0001": "SAT",
+            "c_0002": "SAT",
+            "c_0003": "SAT"
+          },
+          "v2.9": {
+            "c_0001": "SAT",
+            "c_0002": "SAT",
+            "c_0003": "UNSAT"
+          }
+        }
+      }
+    },
+    "accuracy": {
+      "v2.8": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "v2.9": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      }
+    },
+    "cross_version": {
+      "v2.8_to_v2.9": {
+        "added": 0,
+        "removed": 0,
+        "modified": 1,
+        "unchanged": 2,
+        "reuse_pct": 66.66666666666666
+      }
+    },
+    "propagation": {
+      "v2.8": {
+        "CVE-2022-47630": [
+          "c_0002",
+          "c_0001"
+        ]
+      },
+      "v2.9": {
+        "CVE-2022-47630": []
+      }
+    },
+    "shortcuts": {
+      "v2.8": {
+        "cache_hits": 0,
+        "subsumption_hits": 2,
+        "full_solves": 1
+      },
+      "v2.9": {
+        "cache_hits": 0,
+        "subsumption_hits": 1,
+        "full_solves": 2
+      }
+    },
+    "parity": {
+      "mismatches_total": 0,
+      "backends_compared": [
+        "z3",
+        "smtlib"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "node_count": 1647,
+  "sample_size": 200,
+  "sweep": [
+    {
+      "tau_unsat": 0.7,
+      "z3_calls": 50,
+      "short_circuits": 0,
+      "z3_call_reduction_pct": 0.0,
+      "trigger_recall": 0.0
+    },
+    {
+      "tau_unsat": 0.8,
+      "z3_calls": 50,
+      "short_circuits": 0,
+      "z3_call_reduction_pct": 0.0,
+      "trigger_recall": 0.0
+    },
+    {
+      "tau_unsat": 0.9,
+      "z3_calls": 50,
+      "short_circuits": 0,
+      "z3_call_reduction_pct": 0.0,
+      "trigger_recall": 0.0
+    },
+    {
+      "tau_unsat": 0.95,
+      "z3_calls": 50,
+      "short_circuits": 0,
+      "z3_call_reduction_pct": 0.0,
+      "trigger_recall": 0.0
+    },
+    {
+      "tau_unsat": 0.99,
+      "z3_calls": 50,
+      "short_circuits": 0,
+      "z3_call_reduction_pct": 0.0,
+      "trigger_recall": 0.0
+    }
+  ]
+}

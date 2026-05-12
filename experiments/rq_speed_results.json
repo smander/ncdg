@@ -1,0 +1,125 @@
+{
+  "per_cve": [
+    {
+      "target": "uboot",
+      "vuln_version": "v2022.04",
+      "patched_version": "v2022.07",
+      "cve_id": "CVE-2022-30790",
+      "sample_size": 100,
+      "vuln_nodes": 3979,
+      "patched_nodes": 3979,
+      "extract_time_seconds": 68.188,
+      "phase1": {
+        "wall_seconds": 0.287,
+        "z3_calls": 56
+      },
+      "symbolic_phase2": {
+        "wall_seconds": 0.011,
+        "z3_calls": 1,
+        "reuse_count": 99,
+        "reuse_pct": 0.99
+      },
+      "ncdg_phase2": {
+        "wall_seconds": 0.004,
+        "z3_calls": 0,
+        "reuse_count": 100,
+        "reuse_pct": 1.0
+      },
+      "speedup_x": 3.024,
+      "z3_call_reduction_pct": 1.0
+    },
+    {
+      "target": "uboot",
+      "vuln_version": "v2022.04",
+      "patched_version": "v2022.07",
+      "cve_id": "CVE-2022-30552",
+      "sample_size": 100,
+      "vuln_nodes": 3820,
+      "patched_nodes": 3820,
+      "extract_time_seconds": 67.347,
+      "phase1": {
+        "wall_seconds": 0.331,
+        "z3_calls": 55
+      },
+      "symbolic_phase2": {
+        "wall_seconds": 0.011,
+        "z3_calls": 1,
+        "reuse_count": 99,
+        "reuse_pct": 0.99
+      },
+      "ncdg_phase2": {
+        "wall_seconds": 0.005,
+        "z3_calls": 0,
+        "reuse_count": 100,
+        "reuse_pct": 1.0
+      },
+      "speedup_x": 2.374,
+      "z3_call_reduction_pct": 1.0
+    },
+    {
+      "target": "uboot",
+      "vuln_version": "v2022.04",
+      "patched_version": "v2022.07",
+      "cve_id": "CVE-2022-34835",
+      "sample_size": 100,
+      "vuln_nodes": 1788,
+      "patched_nodes": 1788,
+      "extract_time_seconds": 146.901,
+      "phase1": {
+        "wall_seconds": 0.42,
+        "z3_calls": 71
+      },
+      "symbolic_phase2": {
+        "wall_seconds": 0.19,
+        "z3_calls": 32,
+        "reuse_count": 63,
+        "reuse_pct": 0.63
+      },
+      "ncdg_phase2": {
+        "wall_seconds": 0.001,
+        "z3_calls": 0,
+        "reuse_count": 100,
+        "reuse_pct": 1.0
+      },
+      "speedup_x": 135.834,
+      "z3_call_reduction_pct": 1.0
+    },
+    {
+      "target": "tfa",
+      "vuln_version": "v2.8",
+      "patched_version": "v2.9",
+      "cve_id": "CVE-2022-47630",
+      "sample_size": 100,
+      "vuln_nodes": 2,
+      "patched_nodes": 2,
+      "extract_time_seconds": 2.545,
+      "phase1": {
+        "wall_seconds": 0.01,
+        "z3_calls": 2
+      },
+      "symbolic_phase2": {
+        "wall_seconds": 0.0,
+        "z3_calls": 0,
+        "reuse_count": 2,
+        "reuse_pct": 1.0
+      },
+      "ncdg_phase2": {
+        "wall_seconds": 0.0,
+        "z3_calls": 0,
+        "reuse_count": 2,
+        "reuse_pct": 1.0
+      },
+      "speedup_x": 0.254,
+      "z3_call_reduction_pct": 0.0
+    }
+  ],
+  "aggregate": {
+    "n_pairs_measured": 4,
+    "total_symbolic_phase2_seconds": 0.212,
+    "total_ncdg_phase2_seconds": 0.01,
+    "average_speedup_x": 21.2,
+    "total_symbolic_z3_calls": 34,
+    "total_ncdg_z3_calls": 0,
+    "z3_call_reduction_pct_total": 1.0
+  }
+}

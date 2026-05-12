@@ -1,0 +1,5 @@
+{"cve_id": "CVE-9999-0001", "cwe": "CWE-787", "vulnerable_constraint": "len > 1024", "patched_constraint": "len > 65535", "vars": {"len": "bv16"}, "label": "same_bug"}
+{"cve_id": "CVE-9999-0002", "cwe": "CWE-125", "vulnerable_constraint": "off >= buf_end", "patched_constraint": "off > 0xffffffff", "vars": {"off": "bv32", "buf_end": "bv32"}, "label": "same_bug"}
+{"cve_id": "CVE-9999-0003", "cwe": "CWE-416", "vulnerable_constraint": "ptr == freed_addr", "patched_constraint": "False", "vars": {"ptr": "bv64", "freed_addr": "bv64"}, "label": "same_bug"}
+{"cve_id": "CVE-9999-9999", "cwe": "CWE-787", "vulnerable_constraint": "x < 0", "patched_constraint": "x < 0", "vars": {"x": "bv32"}, "label": "broken_no_change"}
+{"cve_id": "CVE-9999-9998", "cwe": "CWE-787", "vulnerable_constraint": "true", "patched_constraint": "false", "vars": {}, "label": "broken_unparseable"}

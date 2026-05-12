@@ -1,0 +1,26 @@
+{
+  "cve_id": "CVE-2022-34835",
+  "sample_size": 100,
+  "variants": {
+    "symbolic_only": {
+      "reuse_pct": 0.6,
+      "z3_reduction_pct": 0.0,
+      "f1_detection": 1.0
+    },
+    "plus_f_theta": {
+      "reuse_pct": 1.0,
+      "z3_reduction_pct": 0.0,
+      "f1_detection": 1.0
+    },
+    "plus_g_phi": {
+      "reuse_pct": 0.6,
+      "z3_reduction_pct": 0.0,
+      "f1_detection": 1.0
+    },
+    "full_ns_cdg": {
+      "reuse_pct": 1.0,
+      "z3_reduction_pct": 0.0,
+      "f1_detection": 1.0
+    }
+  }
+}

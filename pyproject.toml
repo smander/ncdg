@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cdg-bench"
+version = "1.0.0"
+description = "Constraint Dependency Graphs for Persistent Symbolic Vulnerability Analysis of ARM64 Binaries"
+authors = [{name = "Smander O.S."}]
+requires-python = ">=3.11"
+dependencies = [
+    "z3-solver>=4.12.0",
+    "networkx>=3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+angr = [
+    "angr>=9.2,<10",
+    "claripy>=9.2,<10",
+    "pyyaml>=6.0,<7",
+]
+
+[project.scripts]
+cdg-run = "experiments.experiments:run_all_experiments"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.setuptools.packages.find]
+include = ["cdg_lib*", "experiments*", "firmware*"]

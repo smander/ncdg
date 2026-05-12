@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun y () (_ BitVec 32))
+(assert (bvuge y #x000003e8))
+(assert (bvult y #x00010000))
+(check-sat)
+(exit)

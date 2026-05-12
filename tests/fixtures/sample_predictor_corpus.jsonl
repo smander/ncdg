@@ -1,0 +1,5 @@
+{"formula": "len > 65535", "skeleton": "(VAR u> CONST)", "cwe": "CWE-787", "vars": ["len"], "var_types": {"len": "bv16"}, "outcome": "UNSAT", "embedding": null}
+{"formula": "len > 1024", "skeleton": "(VAR u> CONST)", "cwe": "CWE-787", "vars": ["len"], "var_types": {"len": "bv16"}, "outcome": "SAT", "embedding": null}
+{"formula": "off > 0xffffffff", "skeleton": "(VAR u> CONST)", "cwe": "CWE-125", "vars": ["off"], "var_types": {"off": "bv32"}, "outcome": "UNSAT", "embedding": null}
+{"formula": "off >= buf_end", "skeleton": "(VAR u>= VAR)", "cwe": "CWE-125", "vars": ["off", "buf_end"], "var_types": {"off": "bv32", "buf_end": "bv32"}, "outcome": "SAT", "embedding": null}
+{"formula": "x == 0", "skeleton": "(VAR == CONST)", "cwe": "UNKNOWN", "vars": ["x"], "var_types": {"x": "bv32"}, "outcome": "SAT", "embedding": null}
