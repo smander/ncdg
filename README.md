@@ -68,7 +68,7 @@ If you use this code, please cite the accompanying paper:
 
 ## Author
 
-**Oleksandr Mostovyi** — `adsmander@gmail.com`
+**Oleksandr Mostovyi** — `alex@mostovyi.net`
 
 ## License
 
